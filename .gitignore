@@ -1,8 +1,25 @@
+# gradle stuff
+build
 .gradle
-build/
+eclipse
 
-# Ignore Gradle GUI config
-gradle-app.setting
+# eclipse stuff
+.classpath
+.project
+.settings
+bin
 
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
+# debug & lib folders
+debug
+
+# intellij stuff
+.idea
+out
+*.iml
+*.ipr
+*.iws
+
+/assets
+/lib/
+/run/
+/.README.md.html

@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '1.2.1'
+    id 'eclipse'
+    id 'idea'
+}
+
+group='us.illyohs.kurohime'
+version='0.0.1'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'com.jcabi:jcabi-github:0.23:jar-with-dependencies'
+    compile 'com.google.code.gson:gson:2.3.1'
+
+}
+
+shadowJar {
+    dependencies {
+        include(dependency('com.jcabi:jcabi-github:0.23:jar-with-dependencies'))
+        include(dependency('com.google.code.gson:gson:2.3.1'))
+    }
+}
