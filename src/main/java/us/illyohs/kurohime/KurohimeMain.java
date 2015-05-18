@@ -1,3 +1,5 @@
+package us.illyohs.kurohime;
+
 public class KurohimeMain {
 
     public static void main(String[] args) {
